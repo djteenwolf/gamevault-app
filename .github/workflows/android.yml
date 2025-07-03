@@ -21,7 +21,7 @@ jobs:
       run: ./gradlew assembleFreeDebug assembleProDebug
 
     - name: Upload APKs
-      uses: actions/upload-artifact@v3
+      uses: actions/upload-artifact@v4
       with:
         name: GameVault-APKs
         path: app/build/outputs/**/*.apk
